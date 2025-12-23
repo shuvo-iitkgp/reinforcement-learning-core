@@ -1,6 +1,6 @@
 ## Definitions
 
-Agent : The learner 
+Agent : The decision making entity  
 
 Environment : The thing agent interacts with
 
@@ -55,7 +55,15 @@ $$ q_\pi (s, a) = E_\pi [G_t | S_t = s, A_t = a] $$
 
 ## Bellman equations 
 
+For any policy $\pi$ and any state s, the following consistency condition holds between the value of s and the value of its possible successor states: 
 
+$$v_\pi (s) = E_{\pi}[G_t | S_t = s]$$
+$$\implies v_\pi (s)  = E_{\pi}[ R_{t+1} + \gamma \sum_{k=0}^\inf \gamma^k R_{t+k+2} | S_t = s] $$
+$$\implies v_\pi (s)  =\sum_a \pi (a | s) \sum_{s', r} p(s', r | s, a) [r + \gamma v_\pi (s')] $$
+
+It expresses relationship between the value of a state and the values of its successor states. 
+
+The value function $v_\pi$ is the unique solution of its Bellman equation. 
 
 ## Policy evaluation
 
