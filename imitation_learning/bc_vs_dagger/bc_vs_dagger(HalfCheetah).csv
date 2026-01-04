@@ -1,0 +1,15 @@
+,BC policy,Expert Policy
+Eval_AverageReturn,3732.105957,4157.30957
+Eval_StdReturn,125.815361,69.61365509
+Eval_MaxReturn,3899.7771,4223.174805
+Eval_MinReturn,3581.195068,4045.179443
+Eval_AverageEpLen,1000,1000
+Train_AverageReturn,4205.77832,4205.77832
+Train_StdReturn,83.03881836,83.03881836
+Train_MaxReturn,4288.816895,4288.816895
+Train_MinReturn,4122.739258,4122.739258
+Train_AverageEpLen,1000,1000
+Train_EnvstepsSoFar,2000,2000
+TimeSinceStart,5.0166924,4.037288666
+Training Loss,-8.352416039,-8.352416039
+Initial_DataCollection_AverageReturn,4205.77832,4205.77832
